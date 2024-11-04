@@ -3,7 +3,9 @@ width: 140px;
 }
 
 body {
-    background-image: linear-gradient(to bottom right, white, black);
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, white, black  );
     width: 100%;
 }
 
@@ -83,6 +85,8 @@ body {
     left: -1px;
     width: 100%;
     text-align: center;
+    background-color: white;
+    border-top: 2px solid black;
   }
 
 .laugh-img {
@@ -94,6 +98,18 @@ body {
     margin: 0;
 }
 
+.Secret {
+    position: relative;
+    top: -1500px;
+    /* right: 1000px; */
+} 
+
+.Secret img {
+    width: 10px;
+}
+
+
+
 @media screen and (max-width: 800px){
     .word-nigga{
         margin-bottom: 30px;
@@ -101,5 +117,21 @@ body {
 
     .laugh-img{
         display: none;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .Secret img {
+        width: 2000px;
+    }
+
+    .Secret h1 {
+        font-size: 100px;
+    }
+
+    .Secret {
+        position: relative;
+        top: 1500px;
+        left: 1000px;
     }
 }
